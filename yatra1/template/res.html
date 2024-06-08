@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regis</title>
+</head>
+
+<body>
+    <!-- {{ a.st_name }} {{ a.st_email }} {{ a.st_phone }} {{ a.st_gender }} {{ a.st_seating }} {{ a.st_diet }} {{
+        a.st_handicap }} {{ a.st_address }} {{ a.st_country }}<br> -->
+        
+        
+        <table border="1">
+            {% for a in Std %}
+            <tr>
+
+                <td>{{ a.st_name }}</td>
+                <td>{{ a.st_email }}</td>
+                <td>{{ a.st_phone }}</td>
+                <td>{{ a.st_gender }}</td>
+                <td>{{ a.st_seating }}</td>
+                <td>{{ a.st_diet }}</td>
+                <td>{{ a.st_handicap }}</td>
+                <td>{{ a.st_address }}</td>
+                <td>{{ a.st_country }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        </body>
+
+</html>

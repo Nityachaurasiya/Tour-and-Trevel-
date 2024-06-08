@@ -1,0 +1,321 @@
+/* Style the navbar */
+/* #navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+/* #navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Page content */
+/* .content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/* .sticky+.content {
+  padding-top: 60px;
+} */
+
+
+
+
+
+
+
+
+
+.spinwheel{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+
+}
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+::after{
+  color: white;
+}
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.holiday-search {
+  
+  margin-top: -49px;
+
+  /* position: absolute; */
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background-color: rgb(0 0 0 / 87%);
+  padding-top: 5px;
+
+}
+
+
+
+/* footer */
+ body {
+  
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  /* display: flex;
+  align-items: flex-end; */
+}
+
+footer {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.589);
+  color: white;
+  font-size: 16px;
+}
+footer * {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.row {
+  padding: 1em 1em;
+}
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  align-items: stretch;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+h3 {
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 1.4em;
+  white-space: nowrap;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+li:not(:first-child) {
+  margin-top: 0.8em;
+}
+ul li a {
+  color: #a7a7a7;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #2a8ded;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+input,
+button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+button {
+  background-color: #c7940a;
+  color: #ffffff;
+}
+div.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+.social i {
+  color: #bac6d9;
+}
+
+.copyright {
+  padding: 0.3em 1em;
+  background-color: #25262e;
+}
+.footer-menu{
+  float: left;
+    margin-top: 10px;
+}
+
+.footer-menu a{
+  color: #cfd2d6;
+  padding: 6px;
+
+  text-decoration: none;
+}
+.footer-menu a:hover{
+  color: #27bcda;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: right;
+}
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .holiday-search>.container {
+    width: 95%;
+  }
+
+#more{
+  display: none;
+}   */
+
+
+
+
+
+
+/* 
+.cards-wrappers{
+  display: flex;
+  justify-content: center;
+}
+.cards img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.cards {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.carousel-inners {
+  padding: 1em;
+}
+.carousels-control-prev,
+.carousels-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .cards img {
+    height: 11em;
+  }
+} */
